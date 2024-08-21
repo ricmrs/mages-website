@@ -1,0 +1,58 @@
+.container {
+  gap: 0px;
+}
+
+.button {
+  background-color: #bebebe;
+  padding: 10px 15px;
+  border-radius: 0;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+
+.button[aria-pressed="true"], .button:hover {
+  color: #fff;
+}
+
+.fogo[aria-pressed="true"], .fogo[aria-pressed="true"]:hover {
+  background-color:  #ae0001;
+}
+
+.fogo:hover {
+  background-color:  #740001;
+}
+
+.terra[aria-pressed="true"], .terra[aria-pressed="true"]:hover {
+  background-color: #2a623d;
+}
+
+.terra:hover {
+  background-color:  #1a472a;
+}
+
+.agua[aria-pressed="true"], .agua[aria-pressed="true"]:hover {
+  background-color: #222f5b;
+}
+
+.agua:hover {
+  background-color:  #0e1a40;
+}
+
+.ar[aria-pressed="true"], .ar[aria-pressed="true"]:hover {
+  background-color: #f0c75e;
+}
+
+.ar:hover {
+  background-color:  #ecb939;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    gap: 5px;
+  }
+  
+  .button {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,61 @@
+.container {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.container.fogo {
+  background-color: #740001;
+}
+
+.container.terra {
+  background-color: #1a472a;
+}
+
+.container.agua {
+  background-color: #0e1a40;
+}
+
+.container.ar {
+  background-color: #7c6833;
+}
+
+.infos {
+  font-size: 16px;
+  color: #FFF;
+}
+
+.popover {
+  padding: 5px;
+  color: #FFF;
+}
+
+.popover.fogo {
+  background-color: #cf1616;
+}
+
+.popover.terra {
+  background-color: #448b5c;
+}
+
+.popover.agua {
+  background-color: #7181b6;
+}
+
+.popover.ar {
+  background-color: #d7d9d8;
+  color: #000;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    padding: 12px;
+  }
+  
+  .infos {
+    font-size: 18px;
+  }
+  
+  .popover {
+    padding: 8px;
+  }
+}

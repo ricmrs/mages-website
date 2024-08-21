@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  gap: 20px;
+  border-radius: 15px;
+  align-items: center;
+  background-color: #242633;
+  justify-content: space-between;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  color: #fff;
+  gap: 20px;
+}
+
+.title {
+  font-size: 30px;
+  color: #cdb373;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    flex-direction: row;
+    gap: 200px;
+  }
+}
