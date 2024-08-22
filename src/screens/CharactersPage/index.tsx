@@ -4,13 +4,14 @@ import { ChangeEvent, useEffect, useState } from "react";
 
 import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied";
 import ToggleButtonsMultiple from "@/componentes/ToggleButtonsMultiple";
+import Head from "next/head";
 
 export default function CharacterPage({
   characters,
-  types
+  types,
 }: {
-  characters: ICharacter[],
-  types: string[] 
+  characters: ICharacter[];
+  types: string[];
 }) {
   const [chars, setChars] = useState(characters);
   const [inputValue, setInputValue] = useState("");
@@ -25,7 +26,7 @@ export default function CharacterPage({
       );
       setChars(characterFilteredByNameAndType);
     }
-  
+
     filter(inputValue, typesPressed);
   }, [inputValue, typesPressed, characters]);
 
@@ -39,27 +40,33 @@ export default function CharacterPage({
   }
 
   return (
-    <main className={styles.main}>
-      <input
-        className={styles.input}
-        type="text"
-        onChange={filterChar}
-        placeholder="Filtrar por nome de mago..."
-      />
-      <ToggleButtonsMultiple types={types} filterType={filterType} />
-      <div className={styles.container}>
-        {chars?.map((char) => (
-          <Character key={char.index} {...char} />
-        ))}
-        {chars?.length ? (
-          ""
-        ) : (
-          <p className={styles.notfound}>
-            Parece que não há nenhum mago por aqui...{" "}
-            <SentimentDissatisfiedIcon />
-          </p>
-        )}
-      </div>
-    </main>
+    <>
+      <Head>
+        <title>Magos</title>
+      </Head>
+      <main className={styles.main}>
+        <input
+          className={styles.input}
+          type="text"
+          onChange={filterChar}
+          placeholder="Filtrar por nome de mago..."
+          title="Filtra mago por nome"
+        />
+        <ToggleButtonsMultiple types={types} filterType={filterType} />
+        <div className={styles.container}>
+          {chars?.map((char) => (
+            <Character key={char.index} {...char} />
+          ))}
+          {chars?.length ? (
+            ""
+          ) : (
+            <p className={styles.notfound}>
+              Parece que não há nenhum mago por aqui...{" "}
+              <SentimentDissatisfiedIcon />
+            </p>
+          )}
+        </div>
+      </main>
+    </>
   );
 }

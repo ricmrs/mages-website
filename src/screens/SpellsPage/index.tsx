@@ -1,10 +1,11 @@
 import Spell from "@/componentes/Spell";
-import styles from './spellspage.module.css';
+import styles from "./spellspage.module.css";
 import { ChangeEvent, useState } from "react";
 
-import SentimentDissatisfiedIcon from '@mui/icons-material/SentimentDissatisfied';
+import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied";
+import Head from "next/head";
 
-export default function SpellsPage({ data }: { data: ISpell[] }){
+export default function SpellsPage({ data }: { data: ISpell[] }) {
   const [spells, setSpells] = useState(data);
 
   function filterSpells(event: ChangeEvent<HTMLInputElement>) {
@@ -16,12 +17,32 @@ export default function SpellsPage({ data }: { data: ISpell[] }){
   }
 
   return (
-    <main className={styles.main}>
-      <input className={styles.input} type="text" onChange={filterSpells} placeholder="Filtrar feitiço..."/>
-      <div className={styles.container}>
-        {spells.map(spell => <Spell key={spell.index} {...spell}/>)}
-        {spells.length ? '' : <p className={styles.notfound}>Parece que não há nenhum feitiço por aqui... <SentimentDissatisfiedIcon /></p>}
-      </div>
-    </main>
-  )
+    <>
+      <Head>
+        <title>Feitiços</title>
+      </Head>
+      <main className={styles.main}>
+        <input
+          className={styles.input}
+          type="text"
+          onChange={filterSpells}
+          placeholder="Filtrar feitiço..."
+          title="Filtra feitiço"
+        />
+        <div className={styles.container}>
+          {spells.map((spell) => (
+            <Spell key={spell.index} {...spell} />
+          ))}
+          {spells.length ? (
+            ""
+          ) : (
+            <p className={styles.notfound}>
+              Parece que não há nenhum feitiço por aqui...{" "}
+              <SentimentDissatisfiedIcon />
+            </p>
+          )}
+        </div>
+      </main>
+    </>
+  );
 }
