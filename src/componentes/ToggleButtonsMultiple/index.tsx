@@ -12,7 +12,6 @@ export default function ToggleButtonsMultiple({
   types: string[];
   filterType: (types: string[]) => void;
 }) {
-  // const HOUSES = types.map(house => house.house + " " + house.emoji)
   const [formats, setFormats] = React.useState<string[]>(types);
   const handleFormat = (
     event: React.MouseEvent<HTMLElement>,
