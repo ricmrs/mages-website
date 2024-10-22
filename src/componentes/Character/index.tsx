@@ -12,7 +12,7 @@ export default function Character(char: ICharacter) {
         <p>Tipo: {char.type + " " + getEmojiType(char?.type)}</p>
         <p>Descrição: {char.description}</p>
       </div>
-      <Image alt={char.type} src={char.image} width={200} height={200} />
+      <Image alt={char.type} src={char.image} width={200} height={200} priority={char.index == 0 ? true : false }/>
     </div>
   );
 }
