@@ -1,68 +1,68 @@
 # **Mages Website** 🧙‍♂️📚✨
 
-Bem-vindo ao **Mages Website**! Este é um site onde você pode explorar magos, livros de magia e feitiços de todos os tipos.
+Welcome to the Mages Website! This is a site where you can explore mages, magic books, and spells of all kinds.
 
-O website pode ser acessado pelo [link](https://mages-website.vercel.app).
-
----
-
-## **Índice**
-
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Funcionalidades](#funcionalidades)
-- [Como Usar](#como-usar)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Licença](#licença)
+The website can be accessed via this [link](https://mages-website.vercel.app)..
 
 ---
 
-### **Sobre o Projeto**
+## **Index**
 
-O **Mages Website** foi desenvolvido para centralizar informações sobre magos, seus livros e feitiços.
-
----
-
-### **Funcionalidades**
-
-- **Busca de Magos**: Pesquisa por magos específicos, com informações de habilidades e tipos de magia.
-- **Catálogo de Livros**: Acesso a uma coleção de livros de magia.
-- **Consulta de Feitiços**: Exploração de feitiços com informações sobre como usá-los.
-- **Filtragem**: Filtros para facilitar a navegação por mago, feitiço e tipo de magia.
+- [About the project](#about-the-project)
+- [Features](#features)
+- [How to Use](#how-to-use)
+- [Technologies Used](#technologies-used)
+- [License](#license)
 
 ---
 
-### **Como Usar**
+### **About the Project**
 
-1. **Instalação**:
-   - Clone este repositório:
+The **Mages Website** was developed to centralize information about mages, books, and spells.
+
+---
+
+### **Features**
+
+- **Wizard Search**: Search for specific wizards, with information on skills and types of magic.
+- **Book Catalog**: Access to a collection of magic books.
+- **Spell Search**: Explore spells with information on how to use them.
+- **Filtering**: Filters to facilitate navigation by wizard, spell, and type of magic.
+
+---
+
+### **How to Use**
+
+1. **Installation**:
+   - Clone this repository:
      ```bash
      git clone https://github.com/seu-usuario/mages-website.git
      ```
-   - Navegue até a pasta do projeto:
+   - Navigate to the project folder:
      ```bash
      cd mages-website
      ```
-   - Instale as dependências:
+   - Install the dependencies:
      ```bash
      npm install
      ```
 
-2. **Execução**:
-   - Inicie o servidor local:
+2. **Execution**:
+   - Start the local server:
      ```bash
      npm start
      ```
-   - Abra seu navegador e acesse `http://localhost:3000` para explorar o site.
+   - Open your browser and access `http://localhost:3000` to explore the site.
 
 ---
 
-### **Tecnologias Utilizadas**
+### **Technologies Used**
 
 - **Front-end**: NextJS (React), HTML5, CSS3
 - **Back-end**: Node.js, Express, [repo](https://github.com/ricmrs/mages-api/)
   
 ---
 
-### **Licença**
+### **License**
 
-Este projeto é licenciado sob a licença MIT. Sinta-se à vontade para usar, modificar e distribuir conforme os termos da licença.
+This project is licensed under the MIT license. Feel free to use, modify, and distribute according to the terms of the license.
